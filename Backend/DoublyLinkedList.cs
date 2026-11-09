@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace TallerListasLigadas
+namespace LinkedListsWorkshop
 {
     public class DoublyLinkedList<T> where T : IComparable<T>
     {

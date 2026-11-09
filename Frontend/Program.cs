@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace TallerListasLigadas
+namespace LinkedListsWorkshop
 {
     class Program
     {
@@ -11,18 +11,18 @@ namespace TallerListasLigadas
 
             do
             {
-                Console.WriteLine("\n========================================");
-                Console.WriteLine("      MENÚ LISTA DOBLEMENTE LIGADA      ");
-                Console.WriteLine("========================================");
-                Console.WriteLine("1. Adicionar (admite varios separados por coma)");
+                Console.WriteLine("\n=======================");
+                Console.WriteLine("         MENÚ       ");
+                Console.WriteLine("=======================");
+                Console.WriteLine("1. Adicionar");
                 Console.WriteLine("2. Mostrar hacia adelante");
                 Console.WriteLine("3. Mostrar hacia atrás");
                 Console.WriteLine("4. Ordenar descendentemente");
                 Console.WriteLine("5. Mostrar la(s) moda(s)");
                 Console.WriteLine("6. Mostrar gráfico");
                 Console.WriteLine("7. Existe");
-                Console.WriteLine("8. Eliminar primer elemento (Automático)");
-                Console.WriteLine("9. Borrar toda la lista");
+                Console.WriteLine("8. Eliminar una ocurrencia");
+                Console.WriteLine("9. Eliminar todas las ocurrencias");
                 Console.WriteLine("0. Salir");
                 Console.Write("Seleccione una opción: ");
 
@@ -36,7 +36,7 @@ namespace TallerListasLigadas
                 switch (option)
                 {
                     case 1:
-                        Console.Write("Ingrese el/los valor(es) separados por coma (ej: Blanco, Azul, Amarillo): ");
+                        Console.Write("Ingrese: ");
                         string input = Console.ReadLine();
                         if (!string.IsNullOrWhiteSpace(input))
                         {
@@ -49,7 +49,7 @@ namespace TallerListasLigadas
                                     list.Add(item);
                                 }
                             }
-                            Console.WriteLine("¡Elemento(s) adicionado(s) en orden ascendente!");
+                            Console.WriteLine("¡Elementos adicionados");
                         }
                         else
                         {

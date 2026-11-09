@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace TallerListasLigadas
+namespace LinkedListsWorkshop
 {
     public class Node<T>
     {
