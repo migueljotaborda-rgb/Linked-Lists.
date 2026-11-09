@@ -61,7 +61,7 @@ namespace LinkedListsWorkshop
                         list.DisplayForward();
                         break;
                     case 3:
-                        Console.Write("Lista hacia atrás: ");
+                        Console.Write("Lista hacia atrás: "); 
                         list.DisplayBackward();
                         break;
                     case 4:
